@@ -1,14 +1,25 @@
-printf "Running startup script: ${BASH_SOURCE:-$0}\n"
+********************************
+Running logon script: /home/dell_user/.bash_profile
+********************************
+Siemano dell_user
+********************************
+Running Python logon script...
+***Siemano z Python startup script***
+Exporting gcloud config default settings...
+
+Setting GCP_CURRENT_ACCOUNT as gclcoud.pucenty@gmail.com
+Updated property [core/account].
+Setting GCP_CURRENT_PROJECT as my-kubernetes-project-366710
+Updated property [core/project].
+
+Done running logon script.
+********************************
+dell_user@dell:~$ cat .bash_profile
 printf "********************************\n"
-printf "Siemano `whoami` kurde\n"
+printf "Running logon script: ${BASH_SOURCE:-$0}\n"
 printf "********************************\n"
-printf "Exporting gcloud config default settings...\n"
-export GCP_CURRENT_ACCOUNT=gclcoud.pucenty@gmail.com
-export GCP_CURRENT_PROJECT=my-kubernetes-project-366710
-printf "Setting CURRENT_GCP_ACCOUNT as $GCP_CURRENT_ACCOUNT\n"
-gcloud config set account $GCP_CURRENT_ACCOUNT
-printf "Setting CURRENT_GCP_PROJECT as $GCP_CURRENT_PROJECT\n"
-gcloud config set project $GCP_CURRENT_PROJECT
-printf "Done.\n********************************\n"
-printf "\nSSH to Cloud Shell? Type 'y' for yes:\n"
-read $user_input
+printf "Siemano `whoami`\n"
+printf "********************************\n"
+printf "Running Python logon script...\n"
+./python_logon_script.py
+printf "\nDone running logon script.\n********************************\n"
