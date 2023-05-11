@@ -6,14 +6,14 @@ print(f'***Siemano z Python logon script***')
 
 print("Exporting gcloud config default settings...\n")
 
-GCP_CURRENT_ACCOUNT = "gclcoud.pucenty@gmail.com"
+GCP_CURRENT_ACCOUNT = "gclcoud.pucenty2@gmail.com"
 
 print(f"Setting GCP_CURRENT_ACCOUNT as {GCP_CURRENT_ACCOUNT}")
 os.environ['GCP_CURRENT_ACCOUNT'] = GCP_CURRENT_ACCOUNT
 print(os.environ.get('GCP_CURRENT_ACCOUNT'))
 os.system("gcloud config set project $GCP_CURRENT_ACCOUNT")
 
-GCP_CURRENT_PROJECT = "my-kubernetes-project-366710"
+GCP_CURRENT_PROJECT = "my-project-66314"
 
 print(f"Setting GCP_CURRENT_PROJECT as {GCP_CURRENT_PROJECT}")
 os.environ['GCP_CURRENT_PROJECT'] = GCP_CURRENT_PROJECT
